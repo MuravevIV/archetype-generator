@@ -18,16 +18,3 @@ mvn archetype:generate \
 ```
 mvn clean install
 ```
-
-### Generation
-
-```
-mvn archetype:generate \
-  -DarchetypeGroupId=com.muravyev \
-  -DarchetypeArtifactId=archetype-generator \
-  -DarchetypeVersion=1.0-SNAPSHOT \
-  -DgroupId=${groupId} \
-  -DartifactId=${artifactId} \
-  -Dversion=1.0-SNAPSHOT \
-  -DinteractiveMode=false
-```
