@@ -7,8 +7,27 @@ mvn archetype:generate \
   -DarchetypeGroupId=org.apache.maven.archetypes \
   -DarchetypeArtifactId=maven-archetype-archetype \
   -DarchetypeVersion=1.4 \
-  -DinteractiveMode=false \
   -DgroupId=com.muravyev \
   -DartifactId=archetype-generator \
-  -Dversion=1.0-SNAPSHOT
+  -Dversion=1.0-SNAPSHOT \
+  -DinteractiveMode=false
+```
+
+### Installation
+
+```
+mvn clean install
+```
+
+### Generation
+
+```
+mvn archetype:generate \
+  -DarchetypeGroupId=com.muravyev \
+  -DarchetypeArtifactId=archetype-generator \
+  -DarchetypeVersion=1.0-SNAPSHOT \
+  -DgroupId=${groupId} \
+  -DartifactId=${artifactId} \
+  -Dversion=1.0-SNAPSHOT \
+  -DinteractiveMode=false
 ```
