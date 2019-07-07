@@ -12,6 +12,7 @@
 
     <modules>
         <module>basic-library</module>
+        <module>basic-console-exec</module>
     </modules>
 
 </project>
